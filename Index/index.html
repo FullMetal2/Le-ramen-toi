@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Ramen Toi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="screen.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="topbar">
+        <div class="logo">
+          <a href="index.html">Le Ramen Toi</a>
+        </div>
+        <nav class="menu">
+          <a href="A_propos.html" class="menu_item">A propos</a>
+          <a href="menu.html" class="menu_item">Menu</a>
+          <a href="recettes.html" class="menu_item">Recettes</a>
+          <a href="contact" class="menu_item">Contact</a>
+          <button class="menu_item menu_button" id="btnReserver">
+            Réserver
+          </button>
+        </nav>
+        <div class="popup-overlay" id="overlay"></div>
+        <div class="popup-reservation" id="popupReservation">
+          <h3>Réservation</h3>
+          <input type="text" id="nom" placeholder="Nom" />
+          <input type="text" id="prenom" placeholder="Prénom" />
+          <input type="date" id="dateReservation" />
+          <input type="time" id="heureReservation" />
+          <button id="validerBtn">Valider</button>
+          <button id="annulerBtn">Annuler</button>
+        </div>
+      </div>
+      <div class="baseline">
+        <span class="baseline_welcome">Welcome</span>
+        <strong class="baseline_name">Le Ramen Toi</strong>
+        <span class="baseline_slogan">spécialité japonaise</span>
+      </div>
+    </header>
+    <section class="home-section">
+      <div class="container-small">
+        <div class="block block-left">
+          <div class="block-img">
+            <img src="/img/plat-de-ramen3.jpg" alt="" />
+          </div>
+          <div class="block-body">
+            <h2 class="title"><span>L'histoire</span> des ramens</h2>
+            <p>
+              Originaire de Chine, le Ramen est arrivé au Japon au début du
+              siècle dernier, vers 1900 durant l’ère Meiji. Différents vagues de
+              popularité ont ensuite frappé le Japon jusqu'à ce que le Ramen
+              devienne au fil du vingtième siècle un des plats les plus
+              populaires.
+            </p>
+            <a href="recettes.html" class="more">Voir plus</a>
+          </div>
+        </div>
+        <div class="block block-right">
+          <div class="block-img">
+            <img src="/img/ramen.jpg" alt="" />
+          </div>
+          <div class="block-body">
+            <h2 class="title"><span>Les Ramens</span> c'est quoi ?</h2>
+            <p>
+              Si vous n’avez encore jamais goûté un ramen, vous vous demandez
+              peut-être ce que cette soupe de nouilles japonaise a de si
+              spécial.Ce qui donne tout son caractère au ramen, c’est avant tout
+              le bouillon dans lequel il est préparé. C’est d’ailleurs lui qui
+              donne son bon goût aux nouilles (et non pas l’inverse).
+            </p>
+            <a href="recettes.html" class="more">Voir plus</a>
+          </div>
+        </div>
+        <hr />
+        <div class="block block-centered block-last">
+          <div class="block-body">
+            <h2 class="title"><span>Menu</span>Certifié Bio</h2>
+          </div>
+        </div>
+        <nav class="ingredient-menu">
+          <a href="#Porc" class="active">Porc</a>
+          <a href="#Poulet">Poulet</a>
+          <a href="#Boeuf">Boeuf</a>
+          <a href="#Vegan">Vegan</a>
+        </nav>
+      </div>
+      <hr />
+      <div class="container">
+        <div class="menu-summary">
+          <div class="menu-summary-item">
+            <img
+              src="/img/ramenporc.jpg"
+              alt=""
+              class="menu-summary-img"
+              id="Porc"
+            />
+            <h3 class="menu-summary-title">TONKOTSU SHOYU DU CHEF</h3>
+            <p>
+              Bouillon de porc, nouilles, 2 chashus de porc, mizuna (chou
+              japonais), germe de soja, menma (bambou mariné), portimarron , 2
+              demi-tamago, cébette, et feuille d’algue Nori, huile d'ail
+              échalote parfumée.
+            </p>
+            <div class="menu-summary-price">€20</div>
+          </div>
+        </div>
+        <hr />
+        <div class="menu-summary">
+          <div class="menu-summary-item">
+            <img
+              src="/img/ramenpoulet.jpg"
+              alt=""
+              class="menu-summary-img"
+              id="Poulet"
+            />
+            <h3 class="menu-summary-title">KARE (CURRY) RAMEN DU CHEF</h3>
+            <p>
+              Bouillon épais de poulet, Kare curry tare, huile d'ail parfumée,
+              crevette sauté, 2 demi-tamago, édamame, cébette, germe de soja,
+              champignon noir sauté, potimarron, citron vert, nouille de ramen
+            </p>
+            <div class="menu-summary-price">€20</div>
+          </div>
+        </div>
+        <hr />
+        <div class="menu-summary">
+          <div class="menu-summary-item">
+            <img
+              src="/img/ramenboeuf.png"
+              alt=""
+              class="menu-summary-img"
+              id="Boeuf"
+            />
+            <h3 class="menu-summary-title">GUYNIKU RAMEN (BOEUF) DU CHEF</h3>
+            <p>
+              Bouillon épais de poulet, nouilles, 2 chashus de BŒUF, guyniku
+              tare, edamame, maïs, champignon shiitaké sauté, champignon noir
+              sauté, cébette, huile pimentée parfumée, 2 demi-tamago, cébette,
+              et feuille d’algue Nori.
+            </p>
+            <div class="menu-summary-price">€20</div>
+          </div>
+        </div>
+        <hr />
+        <div class="menu-summary">
+          <div class="menu-summary-item">
+            <img
+              src="/img/ramenvegan.jpg"
+              alt=""
+              class="menu-summary-img"
+              id="Vegan"
+            />
+            <h3 class="menu-summary-title">VEGAN RAMEN</h3>
+            <p>
+              Bouillon des LÉGUMES, nouilles, TOFU, LÉGUMES de SAISON, cébette,
+              huile d'ail parfumée
+            </p>
+            <div class="menu-summary-price">€20</div>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </section>
+    <script src="/Script/script.js"></script>
+  </body>
+</html>
