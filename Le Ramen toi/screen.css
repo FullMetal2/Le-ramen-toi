@@ -33,7 +33,7 @@ img {
       rgba(54, 54, 54, 0.5) 39.24%,
       rgba(28, 28, 28, 0.4)
     ),
-    url("../img/plat-de-ramen.jpg") center center / cover no-repeat;
+    url("/img/plat-de-ramen.jpg") center center / cover no-repeat;
   color: #fff;
 }
 
